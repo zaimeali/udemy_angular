@@ -26,4 +26,8 @@ export class AppComponent {
     this.status = true;
   }
 
+  greetPerson(){
+    alert("Hi");
+  }
+
 }
