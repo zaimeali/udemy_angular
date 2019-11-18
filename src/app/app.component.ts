@@ -9,4 +9,13 @@ export class AppComponent {
   title = 'demo';
   firstName = 'Zaime';
   lastName = 'Ali';
+
+  constructor(){
+    console.log('Constructor here..');
+  }
+
+  displayName(){
+    return this.firstName;
+  }
+
 }
