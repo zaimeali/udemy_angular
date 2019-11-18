@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'demo';
-  firstName = 'Zaime';
-  lastName = 'Ali';
+  firstName = 'Abdul';
+  lastName = 'Raffay';
 
   status: boolean;
 
