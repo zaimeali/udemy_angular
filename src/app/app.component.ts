@@ -33,4 +33,8 @@ export class AppComponent {
   mousingOver(){
     alert("We Just Moused Over");
   }
+
+  keyDowning(){
+    alert("You Keydown");
+  }
 }
