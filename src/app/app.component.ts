@@ -14,6 +14,8 @@ export class AppComponent {
 
   constructor(){
     console.log('Constructor here..');
+
+    this.getUserStatus();
   }
 
   displayName(){
