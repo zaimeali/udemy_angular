@@ -10,12 +10,18 @@ export class AppComponent {
   firstName = 'Zaime';
   lastName = 'Ali';
 
+  status: boolean;
+
   constructor(){
     console.log('Constructor here..');
   }
 
   displayName(){
     return this.firstName;
+  }
+
+  getUserStatus(){
+    this.status = true;
   }
 
 }

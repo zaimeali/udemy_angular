@@ -11,5 +11,7 @@
 <br>
 
 {{ displayName() }}  -->
+<label for="status">Active</label>
+<input type="radio" name="" id="status" [checked] = "status">
 
-<input type="radio" name="" id="status">
+{{ getUserStatus() }}
