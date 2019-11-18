@@ -30,4 +30,7 @@ export class AppComponent {
     alert("Hi");
   }
 
+  mousingOver(){
+    alert("We Just Moused Over");
+  }
 }
