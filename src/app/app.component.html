@@ -54,4 +54,12 @@
 {{ firstName }}
 <!-- directives are condition -->
 
-<h1 *ngIf="status">{{ lastName }}</h1>
+<!-- if statement -->
+<h1 *ngIf="status; else notActive">{{ lastName }}</h1> 
+<!-- status = false -->
+
+<!-- else statement -->
+<ng-template #notActive>
+  <p>Not Active</p>
+</ng-template>
+<!-- # for symbols -->
