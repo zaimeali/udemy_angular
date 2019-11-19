@@ -6,3 +6,6 @@
     cursor: pointer;
 }
 
+.isActive{
+    color: green;
+}

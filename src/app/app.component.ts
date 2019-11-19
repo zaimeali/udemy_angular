@@ -32,7 +32,7 @@ export class AppComponent {
   }
 
   getUserStatus(){
-    this.status = false;
+    this.status = true;
   }
 
   greetPerson(){
