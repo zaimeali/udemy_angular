@@ -67,5 +67,5 @@
 
 <!-- Loops -->
 <ul>
-  <li *ngFor="let post of posts">{{ post.title }}</li>
+  <li *ngFor="let post of posts; let i = index">{{ i + 1 }} = {{ post.title }}</li>
 </ul>
