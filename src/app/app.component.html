@@ -69,3 +69,6 @@
 <ul>
   <li *ngFor="let post of posts; let i = index">{{ i + 1 }} = {{ post.title }}</li>
 </ul>
+
+<!-- Styling Directive -->
+<h1 [ngStyle]="{color: 'red'}">{{ firstName }}</h1>
