@@ -12,7 +12,8 @@
   <div class="container">
     <app-root></app-root>
 
-    <form action="">
+    <!-- We Need Some Hook for Form -->
+    <form (ngSubmit)="onSubmit()">
       <div class="form-group">
         <input type="text" class="form-control" name="" id="" placeholder="Enter Username">
       </div>

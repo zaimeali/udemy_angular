@@ -27,6 +27,10 @@ export class AppComponent {
     ];
   }
 
+  onSubmit(){
+    console.log("Clicked Submit Button");
+  }
+
   displayName(){
     return this.firstName;
   }
