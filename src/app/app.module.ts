@@ -4,6 +4,15 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RouterModule, Routes } from '@angular/router';
+
+
+// const appRoutes: Routes = [
+//   {
+//     path: '',
+//     component:
+//   }
+// ];
 
 // Nicely made by me
 
@@ -14,7 +23,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
