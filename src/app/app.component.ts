@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { NgForm } from '@angular/forms';
+import { ThrowStmt } from '@angular/compiler';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,11 @@ export class AppComponent {
   firstName = 'Abdul';
   lastName = 'Raffay';
   posts: object[];
+
+  user = {
+    username: '',
+    password: ''
+  };
 
   status: boolean;
 
@@ -31,6 +37,12 @@ export class AppComponent {
 
   onSubmit(theForm: NgForm){
     console.log(theForm.value.username);
+    this.user.username = theForm.value.username;
+    this.user.password = theForm.value.password;
+
+    console.log(this.user);
+
+    // this.http.get('/post', this.user);
   }
 
   displayName(){
