@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponentComponent } from './home-component/home-component.component';
 
 
 // const appRoutes: Routes = [
@@ -16,9 +17,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 // Nicely made by me
 
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponentComponent
   ],
   imports: [
     BrowserModule,
