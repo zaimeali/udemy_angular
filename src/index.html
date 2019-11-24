@@ -13,12 +13,12 @@
     <app-root></app-root>
 
     <!-- We Need Some Hook for Form -->
-    <form (ngSubmit)="onSubmit()">
+    <form (ngSubmit) = "onSubmit(theForm) #theForm">
       <div class="form-group">
-        <input type="text" class="form-control" name="" id="" placeholder="Enter Username">
+        <input ngModel type="text" class="form-control" name="username" id="" placeholder="Enter Username">
       </div>
       <div class="form-group">
-        <input type="password" class="form-control" name="" id="" placeholder="Enter Password">
+        <input ngModel type="password" class="form-control" name="password" id="" placeholder="Enter Password">
       </div>
       <button type="submit" class="btn btn-primary">Submit Form</button>
     </form>

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { NgForm } from '@angular/forms';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -27,8 +29,8 @@ export class AppComponent {
     ];
   }
 
-  onSubmit(){
-    console.log("Clicked Submit Button");
+  onSubmit(theForm: NgForm){
+    console.log(theForm.value.username);
   }
 
   displayName(){
