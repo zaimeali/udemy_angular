@@ -11,6 +11,15 @@
 
   <app-root></app-root>
 
+  
+<form (ngSubmit) = "onSubmit(theForm) #theForm">
+  <div class="form-group">
+    <input ngModel type="text" class="form-control" name="title" id="title" placeholder="Enter Title">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit Form</button>
+</form>
+
+
 <!-- 
   <div class="container"> -->
     
