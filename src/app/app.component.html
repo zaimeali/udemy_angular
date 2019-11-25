@@ -17,7 +17,7 @@
 <!-- {{ getUserStatus() }} -->
 
 <!-- Event Binding pt 1 -->
-<button (click)="greetPerson()">CLICK</button>
+<!-- <button (click)="greetPerson()">CLICK</button>
 
 <br>
 <br>
@@ -30,13 +30,13 @@
 
 <input type="text" (keydown)="keyDowning()">
 
-<br>
-<br>
+<br> -->
+<!-- <br> -->
 
 <!-- Two Way Binding -->
-<input type="text" [(ngModel)]="lastName">
+<!-- <input type="text" [(ngModel)]="lastName">
 
-{{ lastName }}
+{{ lastName }} -->
 
 
 <!-- correct for property binding => [class] = 'status' -->
@@ -51,31 +51,31 @@
 
 
 <!-- Directives -->
-{{ firstName }}
+<!-- {{ firstName }} -->
 <!-- directives are condition -->
 
 <!-- if statement -->
-<h1 *ngIf="status; else notActive">{{ lastName }}</h1> 
+<!-- <h1 *ngIf="status; else notActive">{{ lastName }}</h1>  -->
 <!-- status = false -->
 
 <!-- else statement -->
-<ng-template #notActive>
+<!-- <ng-template #notActive>
   <p>Not Active</p>
-</ng-template>
+</ng-template> -->
 <!-- # for symbols -->
 
 
 <!-- Loops -->
-<ul>
+<!-- <ul>
   <li *ngFor="let post of posts; let i = index">{{ i + 1 }} = {{ post.title }}</li>
-</ul>
+</ul> -->
 
 <!-- Styling Directive -->
-<h1 [ngStyle]="{color: status ? 'red' : 'blue'}">{{ firstName }}</h1>
+<!-- <h1 [ngStyle]="{color: status ? 'red' : 'blue'}">{{ firstName }}</h1> -->
 
 <!-- Class Directive -->
-<br>
-<h1 [ngClass]="{isActive: status}">{{ lastName }}</h1>
+<!-- <br> -->
+<!-- <h1 [ngClass]="{isActive: status}">{{ lastName }}</h1> -->
 <!-- making status = true to run this -->
 
 
@@ -92,3 +92,21 @@
 <!-- What does the ngSubmit  directive do? => It waits for the form submission -->
 <!-- What is the name of the module that helps with conversion of the form data to an object? => NgForm -->
 <!-- Do we need to add the ngModel to the form elements if we want to pull the data out from the form? => Yes -->
+
+<!-- 6 -->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

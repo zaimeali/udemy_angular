@@ -9,12 +9,16 @@ import { HomeComponentComponent } from './home-component/home-component.componen
 import { ContactComponent } from './contact/contact.component';
 
 
-// const appRoutes: Routes = [
-//   {
-//     path: '',
-//     component:
-//   }
-// ];
+const appRoutes: Routes = [
+  {
+    path: '',
+    component: HomeComponentComponent
+  },
+  {
+    path: 'contact',
+    component: ContactComponent
+  }
+];
 
 // Nicely made by me
 
@@ -29,7 +33,7 @@ import { ContactComponent } from './contact/contact.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
