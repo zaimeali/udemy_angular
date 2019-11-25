@@ -9,6 +9,9 @@ import { HomeComponentComponent } from './home-component/home-component.componen
 import { ContactComponent } from './contact/contact.component';
 
 
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
+
 const appRoutes: Routes = [
   {
     path: '',
@@ -33,7 +36,8 @@ const appRoutes: Routes = [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
